@@ -1,2 +1,2 @@
-# MKRR
-A multiple kernel learning strategy integrating gene expression data into genomic prediction
+# WMKRR
+A weighted multiple kernel learning strategy integrating gene expression data into genomic prediction
