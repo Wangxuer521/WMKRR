@@ -324,7 +324,7 @@ clean_memory(X1_train,X2_train,X1_test,X2_test)
 alpha_param = SkoptReal(0.01, 1, prior="log-uniform")
 gamma1_param = SkoptReal(1e-8, 1e-3, prior="log-uniform")
 gamma2_param = SkoptReal(1e-8, 1e-3, prior="log-uniform")
-weight_param = SkoptReal(0, 1)
+weight_param = SkoptReal(0.1, 0.9)
 
 param_space = {
     "alpha": alpha_param,
