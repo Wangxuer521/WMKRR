@@ -33,6 +33,14 @@ cd path/to/your/directory
 python WMKRR.py
 ```
 
+It should be noted that the WMKRR.py script includes the complete hyperparameter optimization, model fitting, and prediction steps. If we have already determined the hyperparameters of a dataset and want to directly use the known hyperparameters to fit the model and make predictions, we can directly run the WMKRR_known_params.py script, but we need to modify the value of the hyperparameters on line 61 of the script. (For example, in cross-validation, we first determine the hyperparameters of the dataset using WMKRR.py in several folds, and then directly use WMKRR_known_params.py to make predictions in all cross-validation groups). The command to run WMKRR_known_params.py is as follows:
+
+```sh
+cd path/to/your/directory
+python WMKRR_known_params.py
+```
+
+
 ### output files
 
 The output files will be stored in the `results` folder and include `best_params.txt` and `valID_pred.txt`.
