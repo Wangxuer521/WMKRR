@@ -162,5 +162,6 @@ if __name__ == "__main__":
     y_pred = best_model.predict(X_test)
 
     # Save prediction results
-    np.savetxt('y_test_pred.txt', y_pred)
+    np.savetxt('valID_pred.txt', y_pred)
+
 
